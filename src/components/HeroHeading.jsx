@@ -3,7 +3,7 @@ import MainCTA from "./MainCTA";
 function HeroHeading() {
   return (
     <div className="text-center lg:flex-1 lg:text-start">
-      <span className="text-green-dark mb-8 hidden text-xl uppercase tracking-[0.35em] drop-shadow-sm lg:block lg:font-semibold">
+      <span className="text-green-dark mb-8 hidden text-xl uppercase tracking-[0.35em] lg:block lg:font-semibold">
         Frontend Developer
       </span>
       <h2 className="mb-4 text-5xl font-semibold uppercase text-gray-dark sm:text-6xl md:text-[5rem] lg:mb-6 dark:text-offWhite">
