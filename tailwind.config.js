@@ -11,9 +11,10 @@ export default {
           medium: "#888",
           light: "#d9d9d9",
         },
-        offWhite: "#f6f6f6",
+        offWhite: "#e8e8e8",
         green: {
           brand: "#c6de41",
+          dark: "#bad13d",
         },
       },
     },

@@ -1,7 +1,7 @@
 function SectionContainer({ children, type }) {
   return (
     <section
-      className={`py-5 md:px-2 md:py-8 ${type === "hero" && "h-screen"}`}
+      className={`pb-5 md:px-2 md:pb-8 lg:pb-12 ${type === "hero" && "pt-16"}`}
     >
       {children}
     </section>
