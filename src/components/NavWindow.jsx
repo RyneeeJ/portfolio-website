@@ -21,8 +21,11 @@ function NavWindow() {
               <PiGithubLogo className={iconClass} />
             </a>
           </li>
-          <li href="https://www.linkedin.com/in/ryne-james-gandia-9aa25a255/">
-            <a>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/ryne-james-gandia-9aa25a255/"
+              target="_blank"
+            >
               <PiLinkedinLogo className={iconClass} />
             </a>
           </li>
