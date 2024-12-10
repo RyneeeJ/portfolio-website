@@ -7,7 +7,7 @@ const projects = [
     description:
       "Minimalist yet elegant full-stack furniture e-commerce web app with integrated checkout payment using stripe.",
     githubLink: "https://github.com/RyneeeJ/Moderngrains-client",
-    techUsed: ["React", "Tailwind", "Supabase", "Node js"],
+    techUsed: ["React", "Tailwind", "Supabase", "Express"],
     thumbnailPath: "/images/moderngrains.png",
   },
   {
@@ -24,7 +24,7 @@ const projects = [
     description:
       "Fast realtime chat application that leverages supabase realtime and Google OAuth.",
     githubLink: "https://github.com/RyneeeJ/realtime-chat-app-react",
-    techUsed: ["Reacg", "Tailwind", "Supabase"],
+    techUsed: ["React", "Tailwind", "Supabase"],
     thumbnailPath: "/images/reacttalks.png",
   },
 ];
@@ -33,12 +33,7 @@ function ProjectsList() {
   return (
     <ul className="space-y-12">
       {projects.map((project) => (
-        <ProjectItem
-          key={project.name}
-          name={project.name}
-          description={project.description}
-          image={project.thumbnailPath}
-        />
+        <ProjectItem key={project.name} project={project} />
       ))}
     </ul>
   );
