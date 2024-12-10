@@ -3,31 +3,31 @@ import SkillsListItem from "./SkillsListItem";
 const skills = [
   {
     name: "HTML",
-    iconPath: "html.svg",
+    iconPath: "/logos/html.svg",
   },
   {
     name: "CSS",
-    iconPath: "css.svg",
+    iconPath: "/logos/css.svg",
   },
   {
     name: "Javascript",
-    iconPath: "js.svg",
+    iconPath: "/logos/js.svg",
   },
   {
     name: "React",
-    iconPath: "react.svg",
+    iconPath: "/logos/react.svg",
   },
   {
     name: "Tailwind CSS",
-    iconPath: "tailwind.svg",
+    iconPath: "/logos/tailwind.svg",
   },
   {
     name: "Git",
-    iconPath: "git.svg",
+    iconPath: "/logos/git.svg",
   },
   {
     name: "Supabase",
-    iconPath: "supabase.svg",
+    iconPath: "/logos/supabase.svg",
   },
 ];
 

@@ -21,7 +21,7 @@ const links = [
   {
     label: "Contact",
     icon: <PiAddressBook className={iconClass} />,
-    sectionId: "#contact-me",
+    sectionId: "#contact",
   },
 ];
 function DesktopNav() {
@@ -29,7 +29,12 @@ function DesktopNav() {
     <nav className="rounded-full bg-gray-light px-4 py-2.5 dark:bg-gray-dark">
       <ul className="flex gap-8">
         {links.map((link) => (
-          <NavLinkItem key={link.label} icon={link.icon} label={link.label} />
+          <NavLinkItem
+            key={link.label}
+            icon={link.icon}
+            label={link.label}
+            sectionId={link.sectionId}
+          />
         ))}
       </ul>
     </nav>

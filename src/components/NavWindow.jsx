@@ -2,13 +2,23 @@ import { PiEnvelope, PiGithubLogo, PiLinkedinLogo } from "react-icons/pi";
 
 function NavWindow() {
   const iconClass = "size-8 cursor-pointer text-green-brand";
+
+  // const handleClick = () => {};
   return (
     <div className="absolute -right-1 -top-1 w-60 bg-offWhite px-6 py-14 pb-9 shadow-md lg:hidden dark:bg-gray-dark">
       <ul className="mb-10 space-y-3 text-lg tracking-wider">
-        <li>About</li>
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
 
       <span className="mb-6 block text-xl uppercase tracking-[0.15em]">
