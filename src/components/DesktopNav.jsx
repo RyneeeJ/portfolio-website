@@ -1,8 +1,9 @@
+/* eslint-disable react-refresh/only-export-components */
 import { PiAddressBook, PiCode, PiUserCircle, PiWrench } from "react-icons/pi";
 import NavLinkItem from "./NavLinkItem";
 
 const iconClass = "size-7 cursor-pointer";
-const links = [
+export const navLinks = [
   {
     label: "About",
     icon: <PiUserCircle className={iconClass} />,
@@ -28,7 +29,7 @@ function DesktopNav() {
   return (
     <nav className="rounded-full bg-gray-light px-4 py-2.5 dark:bg-gray-dark">
       <ul className="flex gap-8">
-        {links.map((link) => (
+        {navLinks.map((link) => (
           <NavLinkItem
             key={link.label}
             icon={link.icon}
