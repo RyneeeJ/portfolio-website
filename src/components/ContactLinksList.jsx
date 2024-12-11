@@ -1,8 +1,4 @@
-import {
-  PiEnvelopeFill,
-  PiLinkedinLogoFill,
-  PiReadCvLogoFill,
-} from "react-icons/pi";
+import { PiEnvelopeFill, PiLinkedinLogoFill, PiNoteFill } from "react-icons/pi";
 import { gmail, linkedInUrl } from "../data/socials";
 import ContactLinkItem from "./ContactLinkItem";
 
@@ -24,7 +20,7 @@ const contactArr = [
   },
   {
     label: "Resumè",
-    icon: <PiReadCvLogoFill className={iconClass} />,
+    icon: <PiNoteFill className={iconClass} />,
     href: "",
     type: "link",
   },

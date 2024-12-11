@@ -1,4 +1,4 @@
-import { PiEnvelope, PiGithubLogo, PiLinkedinLogo } from "react-icons/pi";
+import { PiAt, PiGithubLogo, PiLinkedinLogo } from "react-icons/pi";
 import { navLinks } from "./DesktopNav";
 import { useObserver } from "../contexts/ObserverContext";
 import { githubUrl, gmail, linkedInUrl } from "../data/socials";
@@ -41,7 +41,7 @@ function NavWindow({ setIsNavOpen }) {
           </li>
           <li>
             <a href={`mailto:${gmail}`}>
-              <PiEnvelope className={iconClass} />
+              <PiAt className={iconClass} />
             </a>
           </li>
         </ul>
