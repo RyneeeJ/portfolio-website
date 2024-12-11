@@ -1,8 +1,11 @@
 import { PiEnvelope, PiGithubLogo, PiLinkedinLogo } from "react-icons/pi";
 import { navLinks } from "./DesktopNav";
+import { useObserver } from "../contexts/ObserverContext";
 
-function NavWindow() {
-  const iconClass = "size-8 cursor-pointer text-green-brand";
+function NavWindow({ setIsNavOpen }) {
+  const iconClass =
+    "size-8 cursor-pointer dark:text-green-brand text-gray-dark";
+  const { activeSection } = useObserver();
 
   return (
     <div className="absolute -right-1 -top-1 w-60 bg-offWhite px-6 py-14 pb-9 shadow-md lg:hidden dark:bg-gray-dark">
@@ -10,8 +13,9 @@ function NavWindow() {
         {navLinks.map((link) => (
           <li key={link.label}>
             <a
-              href={link.sectionId}
-              className="block h-full w-full rounded-md px-2 py-1 hover:bg-gray-light dark:hover:bg-gray-medium"
+              href={`#${link.sectionId}`}
+              onClick={() => setIsNavOpen(false)}
+              className={`block h-full w-full rounded-md px-2 py-1 hover:bg-green-brand dark:hover:bg-green-brand dark:hover:text-gray-dark ${activeSection === link.sectionId ? "bg-green-brand dark:text-gray-dark" : ""}`}
             >
               {link.label}
             </a>

@@ -1,10 +1,10 @@
 import { PiList, PiX } from "react-icons/pi";
 
-import { useState } from "react";
 import NavWindow from "./NavWindow";
+import { useMobileNav } from "../contexts/MobileNavContext";
 
 function MobileNav() {
-  const [isNavOpen, setIsNavOpen] = useState(false);
+  const { isNavOpen, setIsNavOpen } = useMobileNav();
 
   const iconClass =
     "size-10 cursor-pointer text-gray-darkest dark:text-offWhite";
@@ -17,7 +17,7 @@ function MobileNav() {
         {!isNavOpen && <PiList className={iconClass} />}
         {isNavOpen && <PiX className={iconClass} />}
       </button>
-      {isNavOpen && <NavWindow />}
+      {isNavOpen && <NavWindow setIsNavOpen={setIsNavOpen} />}
     </>
   );
 }

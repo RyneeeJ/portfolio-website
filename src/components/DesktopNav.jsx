@@ -7,22 +7,22 @@ export const navLinks = [
   {
     label: "About",
     icon: <PiUserCircle className={iconClass} />,
-    sectionId: "#about",
+    sectionId: "about",
   },
   {
     label: "Skills",
     icon: <PiWrench className={iconClass} />,
-    sectionId: "#skills",
+    sectionId: "skills",
   },
   {
     label: "Projects",
     icon: <PiCode className={iconClass} />,
-    sectionId: "#projects",
+    sectionId: "projects",
   },
   {
     label: "Contact",
     icon: <PiAddressBook className={iconClass} />,
-    sectionId: "#contact",
+    sectionId: "contact",
   },
 ];
 function DesktopNav() {

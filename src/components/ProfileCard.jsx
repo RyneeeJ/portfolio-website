@@ -14,7 +14,7 @@ function ProfileCard() {
       <p className="mb-6 max-w-lg text-gray-light sm:mb-8 sm:text-lg dark:text-gray-dark">
         I&apos;m <span className="lg:font-semibold">Ryne</span>, a frontend
         developer based in the Philippines, proficient in cutting-edge
-        technolodgies such as React
+        technologies such as React
       </p>
 
       <div className="flex w-full max-w-md flex-col items-center gap-6 sm:flex-row sm:justify-between lg:justify-center">
