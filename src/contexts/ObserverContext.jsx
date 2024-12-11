@@ -1,7 +1,4 @@
-/* eslint-disable no-unused-vars */
 import { createContext, useContext, useEffect, useState } from "react";
-import { CgKey } from "react-icons/cg";
-import { useInView } from "react-intersection-observer";
 
 const ObserverContext = createContext({
   activeSection: null,
@@ -19,9 +16,7 @@ export default function ObserverProvider({ children }) {
       setActiveSection(visibleSections.at(0).name);
     else if (visibleSections.length > 1) {
       const sorted = visibleSections.sort((a, b) => a.top - b.top);
-
-      const active = sorted.at(0).ratio < 0.5 ? sorted.at(1) : sorted.at(0);
-
+      const active = sorted.at(0).ratio < 0.6 ? sorted.at(1) : sorted.at(0);
       setActiveSection(active.name);
     }
   }, [visibleSections]);

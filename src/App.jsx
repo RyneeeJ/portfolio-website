@@ -1,3 +1,4 @@
+import ContactSection from "./components/ContactSection";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import ProjectsSection from "./components/ProjectsSection";
@@ -11,6 +12,7 @@ export default function App() {
         <HeroSection />
         <SkillsSection />
         <ProjectsSection />
+        <ContactSection />
       </main>
     </div>
   );

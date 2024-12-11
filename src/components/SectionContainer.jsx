@@ -5,7 +5,7 @@ function SectionContainer({ children, sectionId }) {
   const { setVisibleSections, visibleSections } = useObserver();
 
   const { ref } = useInView({
-    threshold: [0, 0.4, 1],
+    threshold: [0, 0.6, 1],
     onChange: (inView, entry) => {
       // CHeck if section is already listed in visibleSections state
       const sectionAlreadyListed = visibleSections.find(
@@ -42,7 +42,11 @@ function SectionContainer({ children, sectionId }) {
   });
 
   return (
-    <section ref={ref} id={sectionId} className={`pt-16 md:px-2 md:pt-20`}>
+    <section
+      ref={ref}
+      id={sectionId}
+      className={`pt-16 last:pb-24 md:px-2 md:pt-20 md:last:pb-32`}
+    >
       {children}
     </section>
   );

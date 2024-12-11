@@ -1,6 +1,7 @@
 import { PiEnvelope, PiGithubLogo, PiLinkedinLogo } from "react-icons/pi";
 import { navLinks } from "./DesktopNav";
 import { useObserver } from "../contexts/ObserverContext";
+import { githubUrl, gmail, linkedInUrl } from "../data/socials";
 
 function NavWindow({ setIsNavOpen }) {
   const iconClass =
@@ -29,20 +30,17 @@ function NavWindow({ setIsNavOpen }) {
       <div>
         <ul className="flex gap-4">
           <li>
-            <a href="https://github.com/RyneeeJ" target="_blank">
+            <a href={githubUrl} target="_blank">
               <PiGithubLogo className={iconClass} />
             </a>
           </li>
           <li>
-            <a
-              href="https://www.linkedin.com/in/ryne-james-gandia-9aa25a255/"
-              target="_blank"
-            >
+            <a href={linkedInUrl} target="_blank">
               <PiLinkedinLogo className={iconClass} />
             </a>
           </li>
           <li>
-            <a>
+            <a href={`mailto:${gmail}`}>
               <PiEnvelope className={iconClass} />
             </a>
           </li>
