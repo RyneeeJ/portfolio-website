@@ -1,10 +1,16 @@
+import { motion } from "motion/react";
 import MainCTA from "./MainCTA";
 import HeroImage from "./HeroImage";
 import SocialLinks from "./SocialLinks";
 
 function ProfileCard() {
   return (
-    <div className="mx-auto flex w-full max-w-3xl flex-col items-center rounded-2xl bg-gray-dark px-6 py-8 text-center md:py-12 lg:w-80 dark:bg-offWhite dark:text-gray-darkest">
+    <motion.div
+      initial={{ opacity: 0, x: -50 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.4 }}
+      className="mx-auto flex w-full max-w-3xl flex-col items-center rounded-2xl bg-gray-dark px-6 py-8 text-center md:py-12 lg:w-80 dark:bg-offWhite dark:text-gray-darkest"
+    >
       <HeroImage />
 
       <div className="mb-4 text-2xl font-bold uppercase text-offWhite sm:mb-6 sm:text-3xl lg:hidden dark:text-gray-darkest">
@@ -23,7 +29,7 @@ function ProfileCard() {
           <MainCTA />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

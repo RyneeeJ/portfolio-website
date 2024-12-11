@@ -1,13 +1,20 @@
+import { motion } from "motion/react";
 import { PiEnvelope } from "react-icons/pi";
 
 function MainCTA() {
   return (
-    <button className="hover:bg-green-dark flex cursor-pointer items-center gap-3 rounded-md bg-green-brand px-4 py-2 text-xl text-gray-darkest transition-all duration-300 lg:px-6 lg:py-3 lg:text-2xl lg:tracking-wide">
-      <a href="#contact">
-        <PiEnvelope className="size-6 lg:size-8" />
+    <motion.button
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      className="hover:bg-green-dark cursor-pointer rounded-md bg-green-brand px-4 py-2 text-xl text-gray-darkest transition-all duration-300 lg:px-6 lg:py-3 lg:text-2xl lg:tracking-wide"
+    >
+      <a href="#contact" className="flex items-center gap-3">
+        <span>
+          <PiEnvelope className="size-6 lg:size-8" />
+        </span>
+        <span>Connect with me</span>
       </a>
-      <span>Connect with me</span>
-    </button>
+    </motion.button>
   );
 }
 

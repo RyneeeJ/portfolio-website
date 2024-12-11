@@ -1,8 +1,15 @@
+import { motion } from "motion/react";
 import MainCTA from "./MainCTA";
 
 function HeroHeading() {
   return (
-    <div className="text-center lg:flex-1 lg:text-start">
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
+      className="text-center lg:flex-1 lg:text-start"
+    >
       <span className="text-green-dark mb-8 hidden text-xl uppercase tracking-[0.35em] lg:block lg:font-semibold">
         Frontend Developer
       </span>
@@ -25,7 +32,7 @@ function HeroHeading() {
       <div className="mt-14 hidden lg:block">
         <MainCTA />
       </div>
-    </div>
+    </motion.div>
   );
 }
 

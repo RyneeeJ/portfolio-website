@@ -6,7 +6,8 @@ import {
 import { gmail, linkedInUrl } from "../data/socials";
 import ContactLinkItem from "./ContactLinkItem";
 
-const iconClass = "size-8 text-gray-light md:size-10";
+const iconClass =
+  "size-8 dark:text-gray-light group-hover:text-gray-dark md:size-10";
 
 const contactArr = [
   {
