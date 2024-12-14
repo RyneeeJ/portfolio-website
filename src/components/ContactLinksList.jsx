@@ -1,5 +1,5 @@
 import { PiEnvelopeFill, PiLinkedinLogoFill, PiNoteFill } from "react-icons/pi";
-import { gmail, linkedInUrl } from "../data/socials";
+import { gmail, linkedInUrl, resume } from "../data/socials";
 import ContactLinkItem from "./ContactLinkItem";
 
 const iconClass =
@@ -21,10 +21,11 @@ const contactArr = [
   {
     label: "Resumè",
     icon: <PiNoteFill className={iconClass} />,
-    href: "",
+    href: resume,
     type: "link",
   },
 ];
+
 function ContactLinksList() {
   return (
     <ul className="flex flex-wrap justify-center gap-4 md:gap-6">

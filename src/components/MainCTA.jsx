@@ -6,7 +6,7 @@ function MainCTA() {
     <motion.button
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
-      className="hover:bg-green-dark cursor-pointer rounded-md bg-green-brand px-4 py-2 text-xl text-gray-darkest transition-all duration-300 lg:px-6 lg:py-3 lg:text-2xl lg:tracking-wide"
+      className="cursor-pointer rounded-md bg-green-brand px-4 py-2 text-xl font-light text-gray-darkest transition-all duration-300 hover:bg-green-dark lg:px-6 lg:py-3 lg:text-2xl lg:tracking-wide"
     >
       <a href="#contact" className="flex items-center gap-3">
         <span>
